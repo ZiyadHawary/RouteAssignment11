@@ -1,0 +1,1 @@
+import Joi from 'joi';export const create=Joi.object({messageId:Joi.string().pattern(/^[0-9a-fA-F]{24}$/).required()});export const decide=Joi.object({status:Joi.string().valid('accepted','rejected').required()});
